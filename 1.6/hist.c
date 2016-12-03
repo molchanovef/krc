@@ -55,6 +55,7 @@ main()
 	int maxvalue = 0;
 	for(i = 0; i < MAX_WORD_LEN; i++)
 	{
+		printf("%d ", word[i]);
 		if(word[i] > maxvalue)
 			maxvalue = word[i];
 	}
@@ -85,13 +86,16 @@ main()
 	{
 		for(j = 0; j < MAX_WORD_LEN; j++)
 		{
-			if(word[j] >= i) printf(" # ");
-			else printf("   ");
+			if(word[j] >= i) printf("#");
+			else printf(" ");
 		}
 		printf("\n");
 	}
 	for(i = 0; i < MAX_WORD_LEN; i++)
-		printf("%2d ",i+1);
+		printf("%d",(i+1)/10);
+	printf("\n");
+	for(i = 0; i < MAX_WORD_LEN; i++)
+		printf("%d",(i+1)%10);
 	printf("\n");
 #endif
 }

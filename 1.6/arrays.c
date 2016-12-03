@@ -20,7 +20,7 @@ main()
 
     printf("цифры =");
     for (i = 0; i < 10; ++i)
-        printf("%d", ndigit[i]);
+        printf("%d ", ndigit[i]);
     printf(", символы-разделители =%d, прочие =%d\n", nwhite, nother);
 }
 
